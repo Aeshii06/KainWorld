@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KainWorld.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/Scrollbar.css" />
+    <link rel="stylesheet" href="~/css/footer.css"/>
+    <style>
+        html{
+            overflow:auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="container"> 
                 <img class="rounded-circle" src="~/Media/Ehpaanokung.webp" height="50px" width="50px" />
                 <a class="navbar-brand" asp-area="" asp-page="/Index">KainWorld</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -50,8 +54,19 @@
    
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - KainWorld 
+            <div align="right">
+                &copy; 2023 - KainWorld
+            </div>          
         </div>
+        <style>
+            .footer{       
+                background-color:white;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width:100%;
+            }
+        </style>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
