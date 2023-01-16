@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\Sliding-Images.css" />
+    <None Include="wwwroot\js\Sliding-Images.js" />
+  </ItemGroup>
+
 </Project>

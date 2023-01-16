@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace KainWorld.Pages
 {
-    public class PrivacyModel : PageModel
+    public class NewsModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<NewsModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public NewsModel(ILogger<NewsModel> logger)
         {
             _logger = logger;
         }

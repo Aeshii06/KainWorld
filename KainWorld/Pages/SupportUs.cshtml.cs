@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace KainWorld.Pages
 {
-    public class IndexModel : PageModel
+    public class SupportUsModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<SupportUsModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public SupportUsModel(ILogger<SupportUsModel> logger)
         {
             _logger = logger;
         }

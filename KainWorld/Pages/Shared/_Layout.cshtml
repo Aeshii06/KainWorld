@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KainWorld.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Scrollbar.css" />
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
+                <img class="rounded-circle" src="~/Media/Ehpaanokung.webp" height="50px" width="50px" />
                 <a class="navbar-brand" asp-area="" asp-page="/Index">KainWorld</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +26,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/News">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/SupportUs">Support Us</a>
                         </li>
                     </ul>
                 </div>
@@ -35,10 +47,10 @@
             @RenderBody()
         </main>
     </div>
-
+   
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - KainWorld - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - KainWorld 
         </div>
     </footer>
 
