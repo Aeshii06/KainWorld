@@ -6,109 +6,79 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="~/css/scrollbar.css" />
-   <style>
-    body {
-        font-family: Arial;
-        margin: 0;
-    }
+<link rel="stylesheet" href="~/css/Index/slidingimages.css" />
+<link rel="stylesheet" href="~/css/Index/hero.css" />
 
-    * {
-        box-sizing: border-box;
-    }
-
-    img {
-        vertical-align: middle;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-        position: relative;
-        
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-        cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Six columns side by side */
-    .column {
-        float: left;
-        width: 33.33%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-        opacity: 0.6;
-    }
-
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-</style>
 <body>
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+
+            <div class="carousel-inner" role="listbox">
+
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(https://www.hapagasafeeding.com/wp-content/uploads/2019/12/Option-1.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown"><span>KainWorld </span></h2>
+                            <p class="animate__animated animate__fadeInUp">
+                                Ending Hunger One Step at a Time
+
+
+                            </p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+
+        </div>
+    </section><!-- End Hero -->
 
     <h2 style="text-align:center">Slideshow Gallery</h2>
 
-    <div class="container" style="width:50 %">
+    <div class id="Slidingimages" style="width:100%">
         <div class="mySlides">
             <div class="numbertext">1 / 3</div>
             <img src="~/Media/Poverty 1.jpg" style="width:100%">
@@ -140,11 +110,11 @@
             </div>
             <div class="column">
                 <img class="demo cursor" src="~/Media/Poverty 3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-            </div>
+            </div>      
         </div>
     </div>
 
-                <script>
+<script>
 let slideIndex = 1;
 showSlides(slideIndex);
 
