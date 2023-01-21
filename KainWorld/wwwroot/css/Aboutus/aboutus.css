@@ -9,19 +9,19 @@
 }
 
 
-h1 {
+h1.aboutus {
     font-family: myFont;
     font-size: 60px;
 }
 
-h2 {
+h2.aboutus {
     font-family: myFont;
     font-size: 60px;
     background-color: #F58216;
     color: white
 }
 
-h3 {
+h3.aboutus {
     font-family: myFont;
     font-size: 30px;
 }
@@ -37,7 +37,7 @@ p1 {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 
@@ -64,7 +64,7 @@ p1 {
 }
 
 
-.container {
+.container-aboutus {
     padding: 0 16px;
 }
 
