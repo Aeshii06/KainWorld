@@ -1,0 +1,36 @@
+﻿.row-slide:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-slide
+{
+    margin-left:50px;
+    margin-bottom:20px;
+}
+
+.column-slide 
+{
+    float: left;
+    width: 50%;
+    margin-top:10px;
+}
+
+.info2 h1 {
+    margin-top: 5%;
+    font-size: 80px;
+    float: left;
+    word-break: break-all;
+    letter-spacing: -3px;
+}
+
+.info2 li {
+    float: left;
+    font-size: 130%;
+    color: #262626;
+    font-weight: 300px;
+    text-align: left;
+    line-height: 60px;
+}

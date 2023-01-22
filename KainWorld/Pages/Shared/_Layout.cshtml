@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-
+    <div class="content">
     <!-- ======= Top Bar ======= -->
     <section id="topbar" class="d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
@@ -47,7 +47,6 @@
                 <ul>
                     <li><a class="nav-link scrollto" asp-page="/index">Home</a></li>
                     <li><a class="nav-link scrollto" asp-page="/AboutUs">About</a></li>
-                    <li><a class="nav-link scrollto" asp-page="/News">News</a></li>
                     <li><a class="nav-link scrollto" asp-page="/Supportus">Support Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -62,10 +61,11 @@
             @RenderBody()
         </main>
     </div>
-   
+   </div>
+
     <footer class="border-top footer text-muted">
         <div class="wrapper">
-            <h1 align="center"> Contact Us </h1>
+            <h1 style="font-size:50px" align="center"> Contact Us </h1>
   <br />
   <a href="https://www.facebook.com/Kain-World-106283669034164" class="icon facebook">
     <div class="tooltip">Facebook</div>

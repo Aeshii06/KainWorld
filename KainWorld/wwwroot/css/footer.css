@@ -102,21 +102,27 @@
         color: #ffffff;
     }
   
+html, body
+{
+    height:100%;
+}
 
 body {
-    line-height: 20px;
+    display:flex;
+    flex-direction:column;
 }
 
-#content {
-    height: 2000px;
+.content {
+    flex: 1 0 auto;
 }
 
-#footer {
-    position: fixed;
+.footer {
+    flex-shrink:0;
     width: 100%;
     bottom: 0;
     left: 0;
     height: 20px;
-    background: #222;
+    background : #222;
     color: white;
+    margin-top:10px;
 }

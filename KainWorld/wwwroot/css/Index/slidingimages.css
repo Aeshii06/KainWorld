@@ -1,5 +1,6 @@
 ﻿#Slidingimages {
-    position: relative;
+    position:absolute;
+    vertical-align:center;
 }
 /* Hide the images by default */
 .mySlides {

@@ -8,6 +8,10 @@
     src: url(Lato-Regular.ttf);
 }
 
+body
+{
+    margin:0;
+}
 
 h1.aboutus {
     font-family: myFont;
@@ -17,27 +21,48 @@ h1.aboutus {
 h2.aboutus {
     font-family: myFont;
     font-size: 60px;
-    background-color: #F58216;
-    color: white
+    color: white;
 }
 
+    h2.aboutus span 
+    {
+        background-color: #FFC813;
+    }
+
 h3.aboutus {
+    margin:20px 0;
     font-family: myFont;
     font-size: 30px;
 }
 
-p {
+p.aboutus {
     font-family: myFont2;
-    font-size: 20px;
+    font-size: 17px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 
-p1 {
+p1.aboutus {
     font-size: 12px;
+    padding-left:5px;
+    padding-right:5px;
 }
+
+body.aboutus {
+    font-family: myFont2;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
 
 *, *:before, *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 
@@ -64,8 +89,8 @@ p1 {
 }
 
 
-.container-aboutus {
-    padding: 0 16px;
+.container {
+    padding: 0;
 }
 
 

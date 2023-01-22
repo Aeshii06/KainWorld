@@ -31,7 +31,7 @@
         display:inline-block;
         font-weight: 700;
         margin-bottom: 15px;
-        font-size: 18px;
+        font-size: 30px;
     }
 
 
@@ -48,7 +48,18 @@
 
     .featured-services .description {
         line-height: 24px;
-        font-size: 14px;
+        font-size: 20px;
     }
 
-  
+.container-featured {
+    max-width: 80%;
+}
+
+.feature-image {
+    width: 500px;
+    float: left;
+}
+
+title, description {
+    display: inline-block;
+}
