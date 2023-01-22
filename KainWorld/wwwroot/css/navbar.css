@@ -14,8 +14,11 @@
     width: fit-content;
 }
 
+.navbar-title {
+    padding-left: 30px;
+}
+
 a {
-    padding-left:30px;
     text-decoration: none;
     color: #F58216;
 }

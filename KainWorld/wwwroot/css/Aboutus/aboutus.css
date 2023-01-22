@@ -16,6 +16,7 @@ body
 h1.aboutus {
     font-family: myFont;
     font-size: 60px;
+    color: #F58216;
 }
 
 h2.aboutus {
@@ -35,7 +36,7 @@ h3.aboutus {
     font-size: 30px;
 }
 
-p.aboutus {
+p.title {
     font-family: myFont2;
     font-size: 17px;
     margin-block-start: 1em;
