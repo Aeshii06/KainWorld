@@ -43,8 +43,12 @@ html {
         display: inline;
     }
 
+.container
+{
+    margin:0 0px;
+}
 
-.container {
+.contain-column {
     padding: 0 16px;
 }
 

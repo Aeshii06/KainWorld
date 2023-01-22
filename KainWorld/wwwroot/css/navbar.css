@@ -1,6 +1,21 @@
-﻿
+﻿.container-logo
+{
+    padding:0 16px;
+}
+
+.row-logo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Six columns side by side */
+.column-logo {
+    float: left;
+    width: fit-content;
+}
 
 a {
+    padding-left:30px;
     text-decoration: none;
     color: #F58216;
 }
@@ -182,8 +197,8 @@ h6 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0 10px 30px;
-        font-size: 15px;
+        padding: 15px 0 1px 040px;
+        font-size: 18px;
         color: #222222;
         white-space: nowrap;
         transition: 0.3s;
